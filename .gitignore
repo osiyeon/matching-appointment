@@ -1,5 +1,6 @@
 # Dependency Modules
 node_modules
+.next
 
 # App Packaged
 dist/
