@@ -13,8 +13,8 @@ const AppointmentList = () => {
             members: [
                 { profileImg: '/images/character_img_test.svg' },
                 { profileImg: '/images/character_img_test.svg' },
-                { profileImg: '' },
-                { profileImg: '' },
+                { profileImg: '/images/character_img_test.svg' },
+                { profileImg: '/images/character_img_test.svg' },
                 
             ],
             completedDate: '',
@@ -31,7 +31,7 @@ const AppointmentList = () => {
                 { profileImg: '/images/character_img_test.svg' },
                 { profileImg: '/images/character_img_test.svg' },
                 { profileImg: '/images/character_img_test.svg' },
-                { profileImg: '' },
+                { profileImg: '/images/character_img_test.svg' },
             ],
             completedDate: '2022-07-30',
         },

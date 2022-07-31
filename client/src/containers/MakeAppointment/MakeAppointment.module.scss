@@ -1,0 +1,155 @@
+.MakeAppointment {
+    padding: 0 1.125rem;
+
+    &__title {
+        font-weight: 500;
+        font-size: 13px;
+        color: #666666;
+        line-height: 36px;
+        font-family: 'Pretendard';
+        display: flex;
+        &__essn {
+            padding-left: 0.25rem;
+            color: red;
+        }
+    }
+
+    &__message {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 24px;
+        color: #e36565;
+    }
+
+    &__input__wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 31px;
+    }
+
+    &__input {
+        background: #f9f9f9;
+        height: 44px;
+        width: 100%;
+        border: none;
+        padding: 10px 18px;
+        box-sizing: border-box;
+        font-size: 15px;
+        color: #c9c9c9;
+
+        &__content {
+            background: #f9f9f9;
+            width: 100%;
+            border: none;
+            padding: 10px 18px;
+            box-sizing: border-box;
+            height: 4.25rem;
+            font-size: 15px;
+            color: #c9c9c9;
+        }
+    }
+
+    &__members {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 24px;
+        color: #c9c9c9;
+    }
+
+    &__dropdown__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 31px;
+    }
+
+    &__dropdown {
+        & > button,
+        button:active,
+        button:focus {
+            background: white;
+            border: 0.94382px solid #d9d9d9;
+            border-radius: 69px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 24px;
+            color: #141414;
+            width: 6.25rem;
+        }
+    }
+
+    &__button__wrapper {
+        display: grid;
+        grid-gap: 0.75rem;
+        grid-template-columns: 1fr 1fr;
+        margin: 4.25rem 0 2.375rem;
+    }
+
+    &__cancleButton {
+        border-radius: 1.875rem;
+        background: #f9f9f9;
+        border: 1px solid #d9d9d9;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 36px;
+        height: 50px;
+        color: black;
+    }
+    &__createButton {
+        border-radius: 1.875rem;
+        background: #3578de;
+        border: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 36px;
+
+        height: 50px;
+    }
+
+    &__switch {
+        position: relative;
+        display: inline-block;
+        width: 3.75rem;
+        height: 2rem;
+        margin: 0 0.5rem;
+    }
+
+    &__slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #e4e3e3;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+    }
+
+    &__slider:before {
+        position: absolute;
+        content: '';
+        height: 1.75rem;
+        width: 1.75rem;
+        left: 2px;
+        bottom: 2px;
+        background-color: white;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+    }
+
+    &__slider-checked {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    &__round {
+        border-radius: 2.25rem;
+    }
+
+    &__round:before {
+        border-radius: 50%;
+    }
+}

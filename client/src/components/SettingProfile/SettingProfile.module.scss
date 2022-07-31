@@ -48,11 +48,11 @@
         display: grid;
         // grid-template-columns: 6.875rem 6.875rem 6.875rem;
         grid-template-columns: 1fr 1fr 1fr;
-        
+
         grid-template-rows: 108px 108px 108px;
         border: 1px solid #d9d9d9;
         border-radius: 0.5rem;
-            border-collapse: collapse;
+        border-collapse: collapse;
 
         &__img {
             align-items: center;
@@ -63,11 +63,11 @@
             border-collapse: collapse;
         }
     }
-    
+
     &__startButton {
         width: 100%;
         height: 50px;
-        background: #3578DE;
+        background: #3578de;
         border-radius: 30px;
         color: white;
         border: none;

@@ -1,0 +1,13 @@
+.CustomCalender {
+    width: 100%;
+    & > div {
+        border: none;
+        width: 100%;
+    }
+//     & .react-calendar__month-view__weekdays__weekday {
+//      & > abbr {
+//         text-decoration: none;
+//     }
+// }
+   
+}
