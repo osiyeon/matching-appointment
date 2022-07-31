@@ -1,0 +1,76 @@
+.AppointmentListCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.844037px solid #efefef;
+    padding: 11px 1.125rem 1.5rem;
+
+    &__row {
+        display: flex;
+        font-weight: 500;
+        line-height: 41px;
+        align-items: center;
+    }
+
+    &__name {
+        font-size: 1rem;
+        color: #141414;
+        margin-right: 0.5rem;
+    }
+
+    &__status {
+        &-ing {
+            color: #3578de;
+            font-size: 0.875rem;
+        }
+        &-done {
+            color: #d9d9d9;
+            font-size: 0.875rem;
+        }
+    }
+
+    &__progressBar {
+        border: 0.686747px solid #d9d9d9;
+        border-radius: 6.86747px;
+        height: 13.73px;
+        width: 164.82px;
+        margin-right: 0.5rem;
+
+        &__value {
+            font-weight: 400;
+            font-size: 13px;
+            color: #666666;
+        }
+    }
+
+    &__badge {
+        width: 5.875rem;
+        border: 0.686747px solid #d9d9d9;
+        border-radius: 18.6403px;
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+
+        &__icon {
+            margin-right: 0.25rem;
+        }
+    }
+
+    &__members {
+        display: grid;
+        grid-gap: 1px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        
+        &__character {
+            border: 0.672973px solid #d9d9d9;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+}

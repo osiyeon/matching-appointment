@@ -1,0 +1,14 @@
+.AppointmentList {
+    &__title {
+        border-bottom: 0.844037px solid #efefef;
+        margin-top: 1.75rem;
+
+        &__text {
+            font-weight: 500;
+            font-size: 0.875rem;
+            color: #666666;
+            line-height: 27px;
+            padding-left: 1.25rem;
+        }
+    }
+}

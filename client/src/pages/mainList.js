@@ -1,7 +1,13 @@
-import SettingProfile from '../components/SettingProfile/SettingProfile';
+import Header from '../components/Header/Header';
+import AppointmentList from '../containers/AppointmentList/AppointmentList';
 
-const Profile = () => {
-  return <SettingProfile/>
-}
+const MainList = () => {
+    return (
+        <>
+            <Header title="약속 잡기" addButton introButton />
+            <AppointmentList />
+        </>
+    );
+};
 
-export default Profile
+export default MainList;

@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { Input, Button } from 'reactstrap';
 
 import style from './SettingProfile.module.scss';

@@ -1,0 +1,35 @@
+.Header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1.125rem 0;
+    font-weight: 600;
+    font-size: 19px;
+    
+    &__title {
+        color: #3578DE;
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 35.56px;
+    }
+    
+    &__addButton {
+        background: #3578DE;
+        border: 1px solid #176AE5;
+        border-radius: 50%;
+        color: white;
+        width: 25.43px;
+        height: 25.43px;
+        text-align: center;
+    }
+    
+     &__introButton {
+        border: 1px solid #176AE5;
+        border-radius: 50%;
+        color: #176AE5;
+        width: 25.43px;
+        height: 25.43px;
+        text-align: center;
+    }
+}
