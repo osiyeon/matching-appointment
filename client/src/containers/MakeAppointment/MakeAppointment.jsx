@@ -43,10 +43,6 @@ const MakeAppointment = () => {
                     className={style.MakeAppointment__input__content}
                 />
             </div>
-            <div className={style.MakeAppointment__input__wrapper}>
-                <div className={style.MakeAppointment__title}>참가 인원 추가</div>
-                <div className={style.MakeAppointment__members}>선택한 인원이 없습니다.</div>
-            </div>
             <div className={style.MakeAppointment__dropdown__wrapper}>
                 <div>
                     <div className={style.MakeAppointment__title}>시간 선택 범위 </div>

@@ -6,32 +6,24 @@
     padding: 0.75rem 1.125rem 0;
     font-weight: 600;
     font-size: 19px;
-    
+
     &__title {
-        color: #3578DE;
+        color: #3578de;
         font-weight: 400;
         font-size: 1.25rem;
         line-height: 35.56px;
+        padding: 0 6rem;
     }
-    
+
+    &__introButton {
+        width: 1.625rem;
+        height: 1.625rem;
+        color: #3578de;
+    }
+
     &__addButton {
-        background: #3578DE;
-        border: 1px solid #176AE5;
-        border-radius: 50%;
-        color: white;
-        width: 25.43px;
-        height: 25.43px;
-        text-align: center;
-        vertical-align: center;
-    }
-    
-     &__introButton {
-        border: 1px solid #176AE5;
-        border-radius: 50%;
-        color: #176AE5;
-        width: 25.43px;
-        height: 25.43px;
-        text-align: center;
-         vertical-align: center;
+        width: 1.625rem;
+        height: 1.625rem;
+        color: #3578de;
     }
 }

@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.react-calendar__tile--active:enabled:hover {
+    color: red;
+}
+
+abbr[title] {
+ text-decoration: none;
+}
