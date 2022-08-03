@@ -1,0 +1,21 @@
+.VotingDateBadgeWrapper{
+    font-size: 0.875rem;
+    padding: 0.875rem 0 0.875rem 1.125rem;
+    
+    white-space: nowrap;
+    overflow-x: auto;
+    
+    &__button {
+        border-radius: 1.75rem;
+        border: 1px solid #D9D9D9;
+        color: #141414;
+        font-size: 0.875rem;
+        margin-right: 0.5rem;
+    }
+    
+    &__button:hover {
+        background: #3578DE;
+        border: none;
+        color: white;
+    }
+}
