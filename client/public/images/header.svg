@@ -1,0 +1,16 @@
+<svg width="390" height="40" viewBox="0 0 390 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M348.24 19.1276C346.966 14.4438 351.072 12.4243 353.284 12C349.036 18.313 353.992 21.5884 357 22.4369C354.611 23.2854 349.514 23.8115 348.24 19.1276Z" fill="#3578DE" fill-opacity="0.31"/>
+<rect x="75" y="13.7217" width="26.7329" height="15.2759" rx="6" transform="rotate(-12.3589 75 13.7217)" fill="#3578DE" fill-opacity="0.51"/>
+<rect x="78.769" y="15.2627" width="5.36379" height="7.28675" rx="2.6819" transform="rotate(-12.3589 78.769 15.2627)" fill="white" fill-opacity="0.51"/>
+<rect x="85.9331" y="13.8486" width="5.36379" height="7.28675" rx="2.6819" transform="rotate(-12.3589 85.9331 13.8486)" fill="white" fill-opacity="0.51"/>
+<rect x="92.5781" y="12.0986" width="5.36379" height="7.28675" rx="2.6819" transform="rotate(-12.3589 92.5781 12.0986)" fill="white" fill-opacity="0.51"/>
+<circle cx="85.5018" cy="27.7964" r="2.1907" transform="rotate(-12.1569 85.5018 27.7964)" fill="#666666"/>
+<circle cx="96.9237" cy="25.336" r="2.1907" transform="rotate(-12.1569 96.9237 25.336)" fill="#666666"/>
+<rect x="80.8125" y="30.3008" width="30.5653" height="1.46047" transform="rotate(-12.1569 80.8125 30.3008)" fill="#3578DE"/>
+<rect x="38" y="13.4067" width="7.80448" height="1.5" rx="0.75" transform="rotate(-43.8509 38 13.4067)" fill="#3578DE"/>
+<circle cx="47" cy="5" r="5" fill="#3578DE" fill-opacity="0.33"/>
+<path d="M28.5 27L29.9593 31.4914H34.6819L30.8613 34.2672L32.3206 38.7586L28.5 35.9828L24.6794 38.7586L26.1387 34.2672L22.3181 31.4914H27.0407L28.5 27Z" fill="#3578DE" fill-opacity="0.34"/>
+<circle cx="312.452" cy="32" r="5" transform="rotate(-90 312.452 32)" fill="#3578DE" fill-opacity="0.33"/>
+<path d="M307.452 31C305.619 32 304.052 33.9 312.452 33.5C320.852 33.1 319.285 31.6667 317.452 31" stroke="#3578DE" stroke-opacity="0.63" stroke-linecap="round"/>
+<path d="M281.5 7L282.959 11.4914H287.682L283.861 14.2672L285.321 18.7586L281.5 15.9828L277.679 18.7586L279.139 14.2672L275.318 11.4914H280.041L281.5 7Z" fill="#3578DE" fill-opacity="0.34"/>
+</svg>

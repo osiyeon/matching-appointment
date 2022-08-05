@@ -1,12 +1,19 @@
 .Header {
     height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0.75rem 1.125rem 0;
-    font-weight: 600;
-    font-size: 19px;
-    font-family: 'ONE-Mobile-POP';
+
+    padding-top: 0.75rem;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-weight: 600;
+        font-size: 19px;
+        font-family: 'ONE-Mobile-POP';
+        position: absolute;
+        width: 100%;
+        padding: 0 0.3rem;
+    }
 
     &__title {
         color: #3578de;
@@ -26,5 +33,9 @@
         width: 1.625rem;
         height: 1.625rem;
         color: #3578de;
+    }
+
+    &__background {
+        width: 100%;
     }
 }
