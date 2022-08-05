@@ -33,8 +33,8 @@ const CommentsBox = () => {
     return (
         <div className={style.CommentsBox}>
             <div className={style.CommentsBox__body}>
-                {comments.map(({ name, comment, profileImg }) => (
-                    <div className={style.CommentsBox__row}>
+                {comments.map(({ name, comment, profileImg }, idx) => (
+                    <div className={style.CommentsBox__row} key={idx}>
                         <div className={style.CommentsBox__row__avatar}>
                             <img
                                 src={profileImg}

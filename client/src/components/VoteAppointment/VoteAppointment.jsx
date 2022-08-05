@@ -11,7 +11,7 @@ const VoteAppointment = () => {
             <VotingDateBadgeWrapper />
             <Scheduler />
             <div className={style.VoteAppointment__infos}>
-                <AppointmentMainInfos />
+                <AppointmentMainInfos containingName />
                 <FullTextButton text="투표하기" />
             </div>
         </div>

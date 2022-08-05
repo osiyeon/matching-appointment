@@ -2,6 +2,7 @@ import { Progress, Badge } from 'reactstrap';
 import FullTextButton from '../../components/FullTextButton/FullTextButton';
 import AppointmentMainInfos from '../../components/AppointmentMainInfos/AppointmentMainInfos';
 import CommentsBox from '../../components/CommentsBox/CommentsBox';
+import MemberListCard from '../../components/MemberListCard/MemberListCard';
 
 import style from './MainAppointment.module.scss';
 
@@ -36,19 +37,7 @@ const MainAppointment = () => {
             </div>
             <div className={style.MainAppointment__wrapper}>
                 <div className={style.MainAppointment__title}>멤버</div>
-                <div className={style.MainAppointment__member}>
-                    {members.map(({ profileImg, name }) => (
-                        <div className={style['MainAppointment__member-item']}>
-                            <img
-                                className={style['MainAppointment__member-profile']}
-                                src={profileImg}
-                            />
-                            <Badge size="lg" className={style['MainAppointment__member-name']}>
-                                {name}
-                            </Badge>
-                        </div>
-                    ))}
-                </div>
+                <MemberListCard memberList={members} />
             </div>
             <div className={style.MainAppointment__wrapper}>
                 <div className={style.MainAppointment__title}>댓글</div>

@@ -1,13 +1,13 @@
 import Header from '../components/Header/Header';
-import MainAppointment from '../containers/MainAppointment/MainAppointment'
+import MainAppointment from '../containers/MainAppointment/MainAppointment';
 
 const Main = () => {
     return (
         <>
-        <Header title="약속을 잡자"/>
-        <MainAppointment />
+            <Header title="예진이와 친구들" />
+            <MainAppointment />
         </>
-    )
-}
+    );
+};
 
 export default Main;

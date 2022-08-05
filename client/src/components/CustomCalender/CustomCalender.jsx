@@ -14,6 +14,7 @@ const CustomCalender = () => {
                 prev2Label={null}
                 minDetail="month"
                 showNeighboringMonth={false}
+                selectRange={true}
                 tileClassName={style.CustomCalender__inner}
             />
         </div>
