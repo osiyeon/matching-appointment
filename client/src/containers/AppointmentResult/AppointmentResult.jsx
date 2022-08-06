@@ -17,10 +17,14 @@ const AppointmentResult = () => {
     ];
 
     const members = [
-        { profileImg: '/images/bear_character.svg', name: '무너' },
-        { profileImg: '/images/bear_character.svg', name: '꽥꽥이' },
-        { profileImg: '/images/bear_character.svg', name: '곰돌이' },
-        { profileImg: '/images/bear_character.svg', name: '기러기' },
+        { profileImg: '/images/character/character_bear_1.svg', name: '무너' },
+        { profileImg: '/images/character/character_rabbit_1.svg', name: '꽥꽥이' },
+        { profileImg: '/images/character/character_penguin_1.svg', name: '곰돌이' },
+        { profileImg: '/images/character/character_poppy_1.svg', name: '기러기' },
+        { profileImg: '/images/character/character_hedgehog_1.svg', name: '고슴도치' },
+        { profileImg: '/images/character/character_seal_1.svg', name: '물개' },
+        { profileImg: '/images/character/character_fox_1.svg', name: '곰돌이' },
+        { profileImg: '/images/character/character_snail_1.svg', name: '기러기' },
     ];
     const [selectedRankingIdx, setSelectedRankingIdx] = useState(0);
     const [selectedRanking, setSelectedRanking] = useState('');

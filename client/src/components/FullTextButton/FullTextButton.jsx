@@ -4,9 +4,9 @@ import cx from 'classnames';
 import style from './FullTextButton.module.scss';
 
 
-const FullTextButton = ({text, className}) => {
+const FullTextButton = ({text, className, onClickHandler}) => {
     return (
-        <Button block className={cx(style.FullTextButton, className)}>{text}</Button>
+        <Button block className={cx(style.FullTextButton, className)} onClick={onClickHandler}>{text}</Button>
     );
 };
 

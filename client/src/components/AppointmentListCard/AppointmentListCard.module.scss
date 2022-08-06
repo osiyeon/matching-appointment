@@ -1,15 +1,21 @@
 .AppointmentListCard {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
     border-bottom: 0.844037px solid #efefef;
     padding: 11px 1.125rem 1.5rem;
 
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     &__row {
         display: flex;
         font-weight: 500;
-        line-height: 41px;
         align-items: center;
+        margin-top: 0.875rem;
     }
 
     &__name {
@@ -35,6 +41,11 @@
         height: 13.73px;
         width: 164.82px;
         margin-right: 0.5rem;
+        background: white;
+
+        &-inner {
+            background: #3578de;
+        }
 
         &__value {
             font-weight: 400;
@@ -44,7 +55,6 @@
     }
 
     &__badge {
-        width: 5.875rem;
         border: 0.686747px solid #d9d9d9;
         border-radius: 18.6403px;
         height: 26px;
@@ -54,6 +64,8 @@
         font-weight: 400;
         font-size: 13px;
         line-height: 16px;
+        margin-right: 0.5rem;
+        padding: 0.5rem 1rem;
 
         &__icon {
             margin-right: 0.25rem;
@@ -63,14 +75,16 @@
     &__members {
         display: grid;
         grid-gap: 1px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+
         &__character {
-            border: 0.672973px solid #d9d9d9;
-            width: 40px;
-            height: 40px;
+            border: 0.8px solid #d9d9d9;
+            width: 2.5rem;
+            height: 2.5rem;
             border-radius: 50%;
+            display: flex;
+            justify-content: center;
         }
     }
 }

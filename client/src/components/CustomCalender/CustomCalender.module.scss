@@ -1,7 +1,7 @@
 .CustomCalender {
     width: 100%;
     color: #666666;
-    
+
     & > div {
         border: none;
         width: 100%;
@@ -38,8 +38,20 @@
         background-color: white;
         color: #141414;
     }
-    
+
     button {
         background-color: white;
+        border-radius: 100%;
+    }
+    
+    button:active {
+        background-color: #3578DE !important;
+        color: white;
+        border-radius: 100%;
+    }
+    button:focus {
+        background-color: #3578DE !important;
+        color: white;
+        border-radius: 100%;
     }
 }

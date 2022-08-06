@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import cx from 'classnames'
+import { useRouter } from 'next/router';
+import cx from 'classnames';
 import { Input, Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Button } from 'reactstrap';
 import { BsGeoAltFill } from 'react-icons/bs';
 
@@ -8,6 +9,7 @@ import CustomCalender from '../../components/CustomCalender/CustomCalender';
 import style from './MakeAppointment.module.scss';
 
 const MakeAppointment = () => {
+    const router = useRouter();
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
     const toggle = () => setDropdownOpen((prevState) => !prevState);
@@ -94,13 +96,32 @@ const MakeAppointment = () => {
                 <div className={style.MakeAppointment__toggleButton}>
                     <label className={style.MakeAppointment__switch}>
                         <input id="toggleImage" type="checkbox" />
-                        <span className={cx(style.MakeAppointment__slider, style.MakeAppointment__round)}></span>
+                        <span
+                            className={cx(
+                                style.MakeAppointment__slider,
+                                style.MakeAppointment__round
+                            )}
+                        ></span>
                     </label>
                 </div>
             </div>
             <div className={style.MakeAppointment__button__wrapper}>
-                <Button className={style.MakeAppointment__cancleButton}>취소</Button>
-                <Button className={style.MakeAppointment__createButton}>만들기</Button>
+                <Button
+                    className={style.MakeAppointment__cancleButton}
+                    onClick={() => {
+                        router.push('/mainList');
+                    }}
+                >
+                    취소
+                </Button>
+                <Button
+                    className={style.MakeAppointment__createButton}
+                    onClick={() => {
+                        router.push('/mainList');
+                    }}
+                >
+                    만들기
+                </Button>
             </div>
         </div>
     );
