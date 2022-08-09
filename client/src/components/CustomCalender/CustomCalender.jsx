@@ -7,7 +7,6 @@ const CustomCalender = () => {
     return (
         <div className={style.CustomCalender}>
             <Calendar
-                activeStartDate=''
                 allowPartialRange={false}
                 minDate={new Date()}
                 next2Label={null}

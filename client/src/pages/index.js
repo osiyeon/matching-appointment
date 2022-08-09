@@ -20,8 +20,7 @@ const Index = () => {
     };
 
     return (
-        <div>
-            <img width="100%" src="/images/first_page.svg" />
+        <div style={{background: 'url(/images/first_page.svg)', width: '100%', height: '100vh'}}>
             <Button
                 style={buttonStyle}
                 onClick={() => {
