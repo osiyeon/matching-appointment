@@ -5,9 +5,17 @@ import React from 'react';
 const Index = () => {
     const router = useRouter();
 
+    const backgroundStyle = {
+        background: 'url(/images/first_page.svg)',
+        width: '100%',
+        height: '100vh',
+        ['background-size']: 'cover',
+        display: 'flex',
+        ['align-items']: 'center',
+        ['justify-content']: 'center'
+    };
+    
     const buttonStyle = {
-        position: 'sticky',
-        bottom: '21.125rem',
         background: '#FAE100',
         color: '#000000',
         border: 'none',
@@ -16,11 +24,12 @@ const Index = () => {
         height: '50px',
         ['border-radius']: '1.875rem',
         ['font-weight']: '600',
-        ['font-size']: '18px',
+        ['font-size']: '1rem',
+        ['margin-top']: '8.5rem'
     };
 
     return (
-        <div style={{background: 'url(/images/first_page.svg)', width: '100%', height: '100vh'}}>
+        <div style={backgroundStyle}>
             <Button
                 style={buttonStyle}
                 onClick={() => {

@@ -3,6 +3,8 @@ const path         = require('path');
 const bodyParser   = require('body-parser');
 const config       = require('config');
 const cors         = require('cors');
+const passportConfig = require('./passport');
+require("dotenv").config();
 
 const db = require('./models');
 const routes = require('./routes');
@@ -11,6 +13,8 @@ const port = config.get('port');
 const clientUrl = config.get('client');
 
 const app = express();
+
+passportConfig(app);
 
 app.use(bodyParser.json());
 app.use(cors({origin: clientUrl}));
