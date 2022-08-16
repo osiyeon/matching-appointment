@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { Button } from 'reactstrap';
 import React from 'react';
+import axios from 'axios'
 
 const Index = () => {
     const router = useRouter();
@@ -33,7 +34,10 @@ const Index = () => {
             <Button
                 style={buttonStyle}
                 onClick={() => {
-                    router.push('/mainList');
+                    axios.get('https://matching-appointment-server.run.goorm.io/api/user/kakao').then((res) => {
+                        console.log({res})
+                    })
+                    // router.push('/mainList');
                 }}
             >
                 <img src="/images/kakao_icon.svg" />
