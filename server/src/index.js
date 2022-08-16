@@ -8,6 +8,7 @@ require("dotenv").config();
 
 const db = require('./models');
 const routes = require('./routes');
+const userRouter = require('./routes/user');
 
 const port = config.get('port');
 const clientUrl = config.get('client');
@@ -20,6 +21,7 @@ app.use(bodyParser.json());
 app.use(cors({origin: clientUrl}));
 
 app.use('/', routes);
+app.use('/auth', [userRouter]);
 
 app.get('/', (req, res, next) => {
     res.send('hello world!');
