@@ -1,11 +1,12 @@
-const express = require('express');
-const router = express.Router();
-const passport = require('passport');
-const controller = require('../controllers/user')
+const express = require("express")
+const router = express.Router()
+const passport = require("passport")
+const controller = require("../controllers/user")
 
-// router.post('/', controller.addUser);
+router.get("/kakao", passport.authenticate("kakao"))
+router.get("/kakao/callback", controller.kakaoCallback)
 
-router.get('/kakao', passport.authenticate('kakao'))
-router.get('/kakao/callback', controller.kakaoCallback)
+router.get("/test", controller.test)
+router.get("/login", controller.login)
 
-module.exports = router;
+module.exports = router
