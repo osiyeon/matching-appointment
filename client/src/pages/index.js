@@ -1,12 +1,10 @@
-import { useRouter } from "next/router"
 import { Button } from "reactstrap"
 import React from "react"
-import axios from "axios"
 
-const REDIRECT_URI = "https://localhost:3001/api/user/test"
+const REDIRECT_URI = "http://localhost:3000/main"
 
-const Index = () => {
-  const router = useRouter()
+const Index = ({ apiKey }) => {
+  const kakaoAuthUrl = `https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${apiKey}&redirect_uri=${REDIRECT_URI}`
 
   const backgroundStyle = {
     background: "url(/images/first_page.svg)",
@@ -17,7 +15,6 @@ const Index = () => {
     ["align-items"]: "center",
     ["justify-content"]: "center",
   }
-
   const buttonStyle = {
     background: "#FAE100",
     color: "#000000",
@@ -37,10 +34,7 @@ const Index = () => {
       <Button
         style={buttonStyle}
         onClick={() => {
-          axios.get(`${REDIRECT_URI}`).then(res => {
-            console.log({ res })
-          })
-          // router.push("/mainList")
+          window.location.href = kakaoAuthUrl
         }}
       >
         <img src="/images/kakao_icon.svg" />
@@ -48,6 +42,16 @@ const Index = () => {
       </Button>
     </div>
   )
+}
+
+export async function getServerSideProps() {
+  const apiKey = process.env.REACT_APP_OAUTH_REST_API_KEY
+
+  return {
+    props: {
+      apiKey,
+    },
+  }
 }
 
 export default Index
