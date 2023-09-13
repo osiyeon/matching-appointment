@@ -10,7 +10,7 @@ const Index = ({ apiKey }) => {
     background: "url(/images/first_page.svg)",
     width: "100%",
     height: "100vh",
-    ["background-size"]: "cover",
+    ["backgroundSize"]: "cover",
     display: "flex",
     ["align-items"]: "center",
     ["justify-content"]: "center",
@@ -49,7 +49,7 @@ export async function getServerSideProps() {
 
   return {
     props: {
-      apiKey,
+      apiKey: apiKey || null,
     },
   }
 }
