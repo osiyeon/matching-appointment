@@ -1,7 +1,7 @@
 import { Button } from "reactstrap"
 import React from "react"
 
-const REDIRECT_URI = "http://localhost:3000/main"
+const REDIRECT_URI = "http://localhost:3000/mainList"
 
 const Index = ({ apiKey }) => {
   const kakaoAuthUrl = `https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${apiKey}&redirect_uri=${REDIRECT_URI}`
