@@ -1,11 +1,9 @@
 import { Button } from "reactstrap"
 import React from "react"
 
-const REDIRECT_URI = "http://localhost:3000/mainList"
+const REDIRECT_URI = "http://localhost:3000/kakao"
 
 const Index = ({ apiKey }) => {
-  const kakaoAuthUrl = `https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${apiKey}&redirect_uri=${REDIRECT_URI}`
-
   const backgroundStyle = {
     background: "url(/images/first_page.svg)",
     width: "100%",
@@ -28,14 +26,15 @@ const Index = ({ apiKey }) => {
     ["margin-top"]: "8.5rem",
   }
 
+  const kakaoLogin = () => {
+    window.Kakao.Auth.authorize({
+      redirectUri: REDIRECT_URI,
+    })
+  }
+
   return (
     <div style={backgroundStyle}>
-      <Button
-        style={buttonStyle}
-        onClick={() => {
-          window.location.href = kakaoAuthUrl
-        }}
-      >
+      <Button style={buttonStyle} onClick={kakaoLogin}>
         <img src="/images/kakao_icon.svg" />
         카카오톡으로 3초만에 시작하기
       </Button>
