@@ -30,7 +30,6 @@ const Index = ({ apiKey }) => {
 
   return (
     <div style={backgroundStyle}>
-      {/* <img src="/images/kakao_login_medium_wide.png" /> */}
       <Button
         style={buttonStyle}
         onClick={() => {
