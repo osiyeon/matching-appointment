@@ -1,11 +1,10 @@
-const express = require("express")
-const path = require("path")
+const express = require("express");
 
-const router = express.Router()
+const router = express.Router();
 
-router.use("/api/sample", require("./sample"))
-router.use("/api/user", require("./user"))
+router.use("/api/sample", require("./sample"));
+router.use("/api/user", require("./user"));
 
-router.use("/api/auth", require("./auth"))
+router.use("/api/auth", require("./auth"));
 
-module.exports = router
+module.exports = router;

@@ -1,16 +1,16 @@
-import React from "react"
-import ReactDOM from "react-dom/client"
-import axios from "axios"
-import "bootstrap/dist/css/bootstrap.min.css"
+import React from "react";
+import ReactDOM from "react-dom/client";
+import axios from "axios";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import Sample from "./containers/sample"
+import Sample from "./containers/sample";
 
-const root = ReactDOM.createRoot(document.getElementById("root"))
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-axios.defaults.baseURL = process.env.REACT_APP_SERVER_URL
+axios.defaults.baseURL = process.env.REACT_APP_SERVER_URL;
 
 root.render(
-  <React.StrictMode>
-    <Sample />
-  </React.StrictMode>
-)
+	<React.StrictMode>
+		<Sample />
+	</React.StrictMode>
+);
